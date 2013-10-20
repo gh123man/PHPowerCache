@@ -7,6 +7,6 @@ This short class atomaticly handles updating the browsers cache. It takes the ti
 
 here is some example code
 
-  echo PHPC::js("/some/javascript.js");
-  echo PHPC::css("/some/cssFile.css");
-  echo '<img src="' . PHPC::uri("some/image.png") . '"/>';
+    echo PHPC::js("/some/javascript.js");
+    echo PHPC::css("/some/cssFile.css");
+    echo '<img src="' . PHPC::uri("some/image.png") . '"/>';
