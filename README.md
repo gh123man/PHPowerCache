@@ -26,3 +26,6 @@ your httpd.conf for apache should contain something like this:
       ExpiresByType application/x-javascript "access plus 1 week"
       ExpiresByType text/xml "access plus 1 week"
     </IfModule>
+
+
+NOTE: this works assuming all files are called from the root of your web sorce folder. it may need modificaitons to work otherwise. 
