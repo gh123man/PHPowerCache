@@ -11,11 +11,11 @@ class PHPC {
     }
     
     public static function css($uri) {
-        return '<LINK href="' . PHPC::uri($uri) . '" rel="stylesheet" type="text/css">' . "\n";
+        return '<link href="' . PHPC::uri($uri) . '" rel="stylesheet" type="text/css">' . "\n";
     }
     
     public static function uri($uri) {
-        if (substr($uri, 0, 1) == "/") {
+        if ( strpos($uri, '/', 0) == 0 ) {
             $localFile = substr($uri, 1, strlen($uri));
         } else {
             $localFile = $uri;
